@@ -11,8 +11,8 @@ export default function Blog({ blog }) {
           />
         </div>
         <div className="flex items-center justify-between">
-          <div className="flex items-center gap-5">
-            <div className="w-16 h-16">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 lg:w-14 lg:h-14">
               <img
                 src={blog.author_img}
                 alt={blog.author_name}
@@ -20,25 +20,27 @@ export default function Blog({ blog }) {
               />
             </div>
             <div>
-              <p className="text-2xl font-bold">{blog.author_name}</p>
-              <p className="text-base font-semibold text-gray-500">
+              <p className="text-lg md:text-2xl font-bold">
+                {blog.author_name}
+              </p>
+              <p className="text-xs md:text-base font-semibold text-gray-500">
                 {blog.posted_time}
               </p>
             </div>
           </div>
           <div className="flex items-center gap-5">
-            <p className="text-xl font-medium text-gray-500">
+            <p className="text-sm md:text-xl font-medium text-gray-500">
               {blog.reading_time} min read
             </p>
-            <HiOutlineBookmark className="text-3xl text-gray-500" />
+            <HiOutlineBookmark className="text-xl md:text-3xl text-gray-500" />
           </div>
         </div>
-        <h2 className="text-4xl font-bold">{blog.title}</h2>
-        <p className="text-xl font-medium text-gray-500 pb-5">
+        <h2 className="text-2xl md:text-4xl font-bold">{blog.title}</h2>
+        <p className="text-base md:text-xl font-medium text-gray-500 pb-5">
           <span>{blog.hashtags}</span>
         </p>
         <a href="">
-          <p className="text-xl font-semibold text-[#6047EC] underline">
+          <p className="text-base md:text-xl font-semibold text-[#6047EC] underline pb-5">
             Mark as Read
           </p>
         </a>
