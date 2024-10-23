@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "The Future of React in Web Development",
+    "cover_img": "https://i.ibb.co.com/xffN0W5/1.jpg",
+    "author_name": "John Doe",
+    "author_img": "https://i.ibb.co.com/2FmTpGK/boy1.png",
+    "posted_time": "14 March (4 days ago)",
+    "reading_time": 5,
+    "hashtags": ["React", "WebDevelopment", "JavaScript"]
+  },
+  {
+    "id": 2,
+    "title": "How to Master CSS Grid Layouts",
+    "cover_img": "https://i.ibb.co.com/JQ4VCrF/2.png",
+    "author_name": "Jane Smith",
+    "author_img": "https://i.ibb.co.com/GW63LKS/girl1.jpg",
+    "posted_time": "12 March (6 days ago)",
+    "reading_time": 8,
+    "hashtags": ["CSS", "Grid", "Frontend"]
+  },
+  {
+    "id": 3,
+    "title": "Understanding JavaScript Scope",
+    "cover_img": "https://i.ibb.co.com/JWT7JNf/3.png",
+    "author_name": "Michael Johnson",
+    "author_img": "https://i.ibb.co.com/qLSQ7Rx/boy2.jpg",
+    "posted_time": "10 March (8 days ago)",
+    "reading_time": 4,
+    "hashtags": ["JavaScript", "Scope", "Programming"]
+  },
+  {
+    "id": 4,
+    "title": "Tips for Writing Clean Code",
+    "cover_img": "https://i.ibb.co.com/31VQ5hJ/4.jpg",
+    "author_name": "Alice Williams",
+    "author_img": "https://i.ibb.co.com/dbYHqkC/girl2.jpg",
+    "posted_time": "9 March (9 days ago)",
+    "reading_time": 7,
+    "hashtags": ["Code", "CleanCode", "BestPractices"]
+  }
+]
