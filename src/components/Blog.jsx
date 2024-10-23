@@ -1,11 +1,11 @@
-export default function Blog() {
+export default function Blog({ blog }) {
   return (
     <>
       <div>
-        <p>Title : </p>
-        <p>Author : </p>
-        <p>Posted :</p>
-        <p>Reading :</p>
+        <p>Title : {blog.title}</p>
+        <p>Author : {blog.title}</p>
+        <p>Posted : {blog.title}</p>
+        <p>Reading : {blog.title}</p>
       </div>
     </>
   );
