@@ -6,9 +6,13 @@ export default function App() {
   return (
     <>
       <Header />
-      <div className="w-10/12 mx-auto my-5">
-        <Blogs />
-        <Bookmarks />
+      <div className="w-10/12 mx-auto my-5 grid grid-cols-3 gap-8">
+        <div className="col-span-2">
+          <Blogs />
+        </div>
+        <div className="col-span-1">
+          <Bookmarks />
+        </div>
       </div>
     </>
   );

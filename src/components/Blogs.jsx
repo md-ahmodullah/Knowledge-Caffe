@@ -10,7 +10,6 @@ export default function Blogs() {
   }, []);
   return (
     <div>
-      <h1 className="text-4xl">{blogs.length}</h1>
       {blogs.map((blog) => (
         <Blog key={blog.id} blog={blog} />
       ))}
