@@ -1,5 +1,5 @@
-import { HiOutlineBookmark } from "react-icons/hi2";
-export default function Blog({ blog }) {
+import { HiMiniBookmark } from "react-icons/hi2";
+export default function Blog({ blog, onBookmarked, onMarkedAsRead }) {
   return (
     <>
       <div className="space-y-4  mb-5 border-b-2">
@@ -32,18 +32,22 @@ export default function Blog({ blog }) {
             <p className="text-sm md:text-xl font-medium text-gray-500">
               {blog.reading_time} min read
             </p>
-            <HiOutlineBookmark className="text-xl md:text-3xl text-gray-500" />
+            <HiMiniBookmark
+              className="text-xl md:text-3xl text-blue-500 cursor-pointer"
+              onClick={() => onBookmarked(blog)}
+            />
           </div>
         </div>
         <h2 className="text-2xl md:text-4xl font-bold">{blog.title}</h2>
         <p className="text-base md:text-xl font-medium text-gray-500 pb-5">
           <span>{blog.hashtags}</span>
         </p>
-        <a href="">
-          <p className="text-base md:text-xl font-semibold text-[#6047EC] underline pb-5">
-            Mark as Read
-          </p>
-        </a>
+        <button
+          className="text-base md:text-xl font-semibold text-[#6047EC] underline pb-5"
+          onClick={() => onMarkedAsRead(blog.reading_time, blog.id)}
+        >
+          Mark as Read
+        </button>
       </div>
     </>
   );
